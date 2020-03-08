@@ -1,6 +1,6 @@
 ''' this program is for NFA --> DFA
     NFA is saved as a directed graph and need manually input the graph to the graph
-    can't believe I make it work'''
+'''
 
 
 class Graph():
@@ -28,6 +28,8 @@ class Graph():
     def add_edge(self, start, end, value):
         self.edges[start].append([end, value])
 
+''' Your Graph initialization goes here
+
 graph = Graph(11)
 graph.add_edge(0, 7, 'e')
 graph.add_edge(0, 1, 'e')
@@ -44,6 +46,8 @@ graph.add_edge(8, 9, 'b')
 graph.add_edge(9, 10, 'a')
 graph.add_edge(9, 10, 'b')
 graph.add_edge(6, 1, 'e')
+
+Uncomment this demo graph if you want to use it'''
 
 def get_key(dic, val):
 	return [k for k, v in dic.items() if v == val]
